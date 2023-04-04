@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@200&display=swap');
+
+body {
+  margin: 0;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  height: 40px;
+  width: 100px;
+  margin-top: 10px;
+  position: relative;
+  animation: logo 3s 200ms;
+  animation-fill-mode: forwards;
+
+}
+@keyframes logo {
+  from {left: -300px;}
+  to {left: 80px;}
+}
+
+header .right {
+  display: flex;
+  left: 1100px;
+}
+
+header ul, li {
+  list-style: none;
+  display: flex;
+}
+
+header li {
+  text-decoration: none;
+  margin-right: 60px; 
+  color: antiquewhite;
+  font-family: 'bebas neue', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  position: relative;
+  animation: um 3s;
+  animation-fill-mode: forwards;
+
+}
+@keyframes um {
+  from {margin-right: -50px;}
+  to {margin-right: 60px;}
+}
+
+
+header a {
+  text-decoration: none;
+  margin-right: 80px; 
+  color: antiquewhite;
+  font-family: 'bebas neue', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1.5px;  
+  position: relative;
+  animation: li 3s 200ms;
+}
+
+main {
+  display: flex;
+}
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: -1;
+  background-size: cover;
+}
+
+.maincontent {
+  align-items: center;
+  width: 750px;
+}
+
+.maincontent h1 {
+  width: 400px;
+  font-family: 'raleway', sans-serif;
+  font-weight: 10px;
+  font-size: 60px;
+  color: antiquewhite;
+  margin: 80px 0px 0 80px;
+}
+
+.maincontent .avenge {
+  display: flex;
+  width: 500px;
+  position: relative;
+  animation: ac 3s 200ms;
+
+}
+@keyframes ac {
+  from {left: -900px;}
+  to {left: 0px;}
+
+}
+
+.maincontent .avenge p {
+  font-family: 'Encode Sans SC', sans-serif;
+  font-size: 27px;
+  width: 100px;
+  height: 20px;
+  padding: 0;
+  margin-top: 106px;
+  margin-left: 15px;
+  color: antiquewhite;
+}
+
+main .text {
+  width: 620px;
+  margin-bottom: 50px;
+  line-height: 20px;
+  color: rgb(223, 222, 222);
+  margin-left: 80px;
+  position: relative;
+  animation: txt 3s 200ms;
+  animation-fill-mode: forwards;
+
+}
+@keyframes txt {
+  from {left: -900px;}
+  to {left: 0px;}
+}
+
+.maincontent p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.maincontent button {
+  font-family: 'montserrat', sans-serif;
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  background-color: antiquewhite;
+  width: 300px;
+  height: 60px;
+  margin-left: 80px;
+  border: 0;
+  position: relative;
+  animation: btn 3s 200ms;
+
+}
+@keyframes btn {
+  from {left: -300px;}
+  to {left: 0px;}
+}
+button:hover {
+  background: rgb(202, 193, 181);
+  transition: background 0.5s;
+}
+
+button.what {
+  width: 240px;
+}
